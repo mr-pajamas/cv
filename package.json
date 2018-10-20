@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "author": "Michael Tang <lctang@foxmail.com> (http://lctang.me/)",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "https://github.com/mr-pajamas/cv.git"
@@ -20,8 +20,8 @@
 
     "build": "npm run build:cv_zh -s && npm run build:resume_zh -s",
 
-    "build:cv_zh": "markdown-pdf -o dist/cv_zh.pdf cv_zh.md",
-    "build:resume_zh": "markdown-pdf -o dist/resume_zh.pdf resume_zh.md",
+    "build:cv_zh": "markdown-pdf -s github.css -o dist/cv_zh.pdf cv_zh.md",
+    "build:resume_zh": "markdown-pdf -s github.css -o dist/resume_zh.pdf resume_zh.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
